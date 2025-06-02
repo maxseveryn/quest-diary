@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple ToDo app in fantasy style." />
+    <title>Quest Diary</title>
+
+    <link rel="icon" type="image/png" href="./assets/icons/title-icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="page left-page">
+        <div class="page-title">
+          <h2>Quest Diary | Character Info</h2>
+        </div>
+
+        <div class="character-info">
+          <div class="info-block">
+            <p>Name:</p>
+            <input type="text" placeholder="Hero name..." />
+
+            <p>Age:</p>
+            <input
+              class="age-input"
+              type="number"
+              id="tentacles"
+              name="tentacles"
+              min="14"
+              max="100"
+            />
+          </div>
+
+          <div class="info-block">
+            <p>Status:</p>
+            <p class="status-value">Unknown</p>
+          </div>
+
+          <div class="info-block">
+            <p>Total quests completed:</p>
+            <p>0</p>
+          </div>
+
+          <div class="info-block">
+            <p>Inventory:</p>
+            <div class="inventory-grid">
+              <div class="inventory-slot">
+                <img
+                  src="./assets/icons/sword.png"
+                  alt="Sword"
+                  title="Sword of Focus"
+                />
+              </div>
+              <div class="inventory-slot">
+                <img
+                  src="./assets/icons/shield.png"
+                  alt="Shield"
+                  title="Shield of Discipline"
+                />
+              </div>
+              <div class="inventory-slot">
+                <img
+                  src="./assets/icons/bow.png"
+                  alt="Bow"
+                  title="Bow of Luck"
+                />
+              </div>
+              <div class="inventory-slot">
+                <img
+                  src="./assets/icons/potion.png"
+                  alt="Potion"
+                  title="Red Coffee"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page right-page">
+        <div class="page-title">
+          <h2>Quests</h2>
+        </div>
+
+        <div class="quests-container">
+          <div class="add-quest">
+            <input
+              type="text"
+              id="quest-input"
+              placeholder="Enter a new quest..."
+            />
+            <button class="add-quest-btn" onclick="addQuest()"></button>
+          </div>
+
+          <ul id="quest-list" class="quest-list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
