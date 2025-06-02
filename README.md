@@ -1,4 +1,4 @@
-# quest-diary
+# Quest Diary | by Maxym Severyn
 Simple ToDo List in fantasy style
 
 How to run:
