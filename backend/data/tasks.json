@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": 1748889705932,
+    "text": "Write a poem",
+    "completed": false
+  },
+  {
+    "id": 1748889740596,
+    "text": "Make a dinner",
+    "completed": false
+  },
+  {
+    "id": 1748889788239,
+    "text": "Complete a game",
+    "completed": false
+  }
+]

@@ -76,6 +76,15 @@ function addQuestToDOM(questText, id) {
   document.getElementById("quest-list").appendChild(li);
 }
 
+function addCompletedQuestToDOM(questText, id) {
+  const li = document.createElement("li");
+  li.textContent = questText;
+  li.dataset.id = id;
+  li.classList.add("completed");
+
+  document.getElementById("completed-quest-list").appendChild(li);
+}
+
 let completedCount = 0;
 
 async function loadProfile() {
@@ -117,6 +126,11 @@ async function saveProfile() {
 window.onload = async () => {
   const res = await fetch("http://localhost:3000/api/tasks");
   const quests = await res.json();
+  const completedRes = await fetch("http://localhost:3000/api/completed");
+  const completedQuests = await completedRes.json();
+
   loadProfile();
+
   quests.forEach((q) => addQuestToDOM(q.text, q.id));
+  completedQuests.forEach((q) => addCompletedQuestToDOM(q.text, q.id));
 };
