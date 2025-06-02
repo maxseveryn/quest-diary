@@ -37,6 +37,7 @@
               min="14"
               max="100"
             />
+            <button class="save-profile-btn" onclick="saveProfile()"></button>
           </div>
 
           <div class="info-block">
@@ -46,7 +47,7 @@
 
           <div class="info-block">
             <p>Total quests completed:</p>
-            <p>0</p>
+            <p class="total-quests">0</p>
           </div>
 
           <div class="info-block">
@@ -83,11 +84,16 @@
             </div>
           </div>
         </div>
+
+        <div class="page-title">
+          <h2>Completed quests</h2>
+        </div>
+        <div class="completed-quests-container"></div>
       </div>
 
       <div class="page right-page">
         <div class="page-title">
-          <h2>Quests</h2>
+          <h2>Current quests</h2>
         </div>
 
         <div class="quests-container">
