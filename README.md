@@ -1,5 +1,6 @@
 # Quest Diary | by Maxym Severyn
 Simple ToDo List in fantasy style
+Project for Freshcode Training Center Practice
 
 How to run:
 1. Clone repository.
